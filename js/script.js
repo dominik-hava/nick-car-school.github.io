@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function clearTable() {
+    var confirmation = confirm(`Are you sure you want to delete question number "${row.cells[0].innerHTML}"?`)
+    if (!confirmation) return
     var table = document.getElementById('question-table').getElementsByTagName('tbody')[0]
     table.innerHTML = ''
     columnValues = []
