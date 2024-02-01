@@ -1,1 +1,33 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <label for="question-number">Enter Question Number:</label>
+        <input type="number" id="question-number" placeholder="Enter question number">
+
+        <button id="add-data-button">Add to Table</button>
+    </div>
+
+    <table id="question-table">
+        <thead>
+            <tr>
+                <th>Question Number</th>
+                <th>Learned</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button id="clear-table-button">Clear table</button>
+</body>
+
+</html>
