@@ -30,7 +30,7 @@ function removeItem(row) {
         var questionNumber = row.cells[0].innerHTML
         var index = columnValues.findIndex(value => value === questionNumber)
         columnValues.splice(index, 1)
-        table.deleteRow(rowIndex-1)
+        table.deleteRow(rowIndex - 1)
         saveToLocalStorage()
     }
 }
@@ -62,7 +62,8 @@ function addData() {
     saveToLocalStorage();
 
     // Add click event listener to the row
-    row.addEventListener('click', function () {
+    row.addEventListener('click', function (event) {
+        if (event.target.type === 'checkbox') return
         removeItem(row)
     });
 }

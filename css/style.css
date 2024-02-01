@@ -1,12 +1,18 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: medium;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f1f1f1;
 }
 
 div {
-    margin: 20px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
 }
 
 table {
@@ -18,24 +24,81 @@ table {
 table,
 th,
 td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px #747474;
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #7a7a7a;
     color: white;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+input {
+    width: 100%;
+    padding: 12px 20px;
     margin: 20px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 3px 3px #747474;
+    resize: none;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    transition: rotate 0.5s;
+    box-shadow: 1px 1px #747474;
+}
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+input[type="checkbox"]:active{
+    rotate: -30deg;
+}
+
+input[type="checkbox"]:checked{
+    accent-color: #415197;
+}
+
+button {
+    font-size: 1em;
+    transition: transform 0.2s;
+    background-color: #47b74b;
+    color: white;
+    padding: 10px 30px;
+    margin: 0;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+#clear-table-button {
+    background-color: #f44336;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.9);
 }
